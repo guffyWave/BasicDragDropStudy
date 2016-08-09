@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gufran.basicdragdropstudy.MainActivity">
+
+    <ImageView
+        android:id="@+id/scenaryImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/scenary" />
+
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scenaryImageView"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgView"
+        android:text="Dragged At "
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
